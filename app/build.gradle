@@ -49,7 +49,7 @@ configurations {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -60,10 +60,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     //Typesense client
-    //implementation 'org.typesense:typesense-java:0.0.8'
-    implementation 'org.typesense:typesense-java:0.0.9-beta4'
-
-    //added to try solve issue with beta4
-    implementation 'androidx.core:core-ktx:1.9.0'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0"
+    implementation 'org.typesense:typesense-java:0.0.9-beta5'
+    //Kotlin coroutines For LifecycleScope
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
 }
