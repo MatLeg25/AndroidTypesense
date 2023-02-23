@@ -13,7 +13,7 @@ uses-permission android:name="android.permission.INTERNET"/>
 implementation 'org.typesense:typesense-java:0.0.9-beta5'
 ```
 
->2b. Exclude group to prevent Duplication class error in build.gradle:
+>2b. Exclude group to prevent 'Duplication class error' in build.gradle:
 ```
 configurations {
     cleanedAnnotations
@@ -30,7 +30,7 @@ configurations {
     implementation.exclude group: 'com.fasterxml.jackson.module' , module:'jackson-module-jaxb-annotations'
 }
 ```
->3. Create class TypesenseInitializer with connection Node details
+>3. Create class 'TypesenseInitializer' with connection Node details
 ```
 (...)
     public TypesenseInitializer() throws Exception {
@@ -48,7 +48,7 @@ configurations {
     }
 (...)
 ```
->4. Create Typesense client in MainActivity class and connect UI actions with the client
+>4. Create Typesense client in 'MainActivity' class and connect UI actions with the client
 
 >5. Run the app!
 
